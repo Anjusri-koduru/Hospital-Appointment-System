@@ -27,7 +27,7 @@ function Login() {
       localStorage.clear();
 
       const { data } = await axios.post(
-        "http://localhost:4000/api/auth/login",
+        "https://hospital-backend-72gn.onrender.com/api/auth/login",
         user
       );
 

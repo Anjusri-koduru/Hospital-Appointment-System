@@ -14,7 +14,7 @@ function Doctors() {
     try {
 
       const { data } = await axios.get(
-        "http://localhost:4000/api/doctors"
+        "https://hospital-backend-72gn.onrender.com/api/doctors"
       );
 
       setDoctors(data.doctors);

@@ -15,9 +15,9 @@ function Dashboard() {
 
     try {
 
-      const doctorRes = await axios.get("http://localhost:4000/api/doctors");
-      const patientRes = await axios.get("http://localhost:4000/api/patients");
-      const appointmentRes = await axios.get("http://localhost:4000/api/appointments");
+      const doctorRes = await axios.get("https://hospital-backend-72gn.onrender.com/api/doctors");
+      const patientRes = await axios.get("https://hospital-backend-72gn.onrender.com/api/patients");
+      const appointmentRes = await axios.get("https://hospital-backend-72gn.onrender.com/api/appointments");
 
       setDoctors(doctorRes.data.doctors);
       setPatients(patientRes.data.patients);

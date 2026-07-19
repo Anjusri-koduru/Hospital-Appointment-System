@@ -16,7 +16,7 @@ function PatientDashboard() {
       const patientId = localStorage.getItem("patientId");
 
       const { data } = await axios.get(
-        `http://localhost:4000/api/appointments/patient/${patientId}`
+        `https://hospital-backend-72gn.onrender.com/api/appointments/patient/${patientId}`
       );
 
       setAppointments(data.appointments);
