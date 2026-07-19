@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="container text-center mt-5 pt-5">
-
       <h1 className="display-4 fw-bold text-primary">
         Hospital Appointment System
       </h1>
@@ -11,17 +12,14 @@ function Home() {
       </p>
 
       <div className="mt-4">
-
-        <a href="/register" className="btn btn-primary me-3">
+        <Link to="/register" className="btn btn-primary me-3">
           Register
-        </a>
+        </Link>
 
-        <a href="/login" className="btn btn-success">
+        <Link to="/login" className="btn btn-success">
           Login
-        </a>
-
+        </Link>
       </div>
-
     </div>
   );
 }
